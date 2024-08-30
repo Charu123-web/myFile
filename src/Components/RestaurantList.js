@@ -3,6 +3,7 @@ import Restaurant from './Restaurant';
 import restaurants from '../restaurants';
 import { useState } from 'react';
 import SearchBar from './SearchBar';
+import "./Restaurant.css"
 
 
 const RestaurantList = () => {
@@ -20,8 +21,8 @@ const RestaurantList = () => {
 
   return (
     <>
-    <div>
-      <h1>Restaurant List</h1>
+    <div className="restaurant-list-container">
+      <h3>Restaurants List</h3>
       <SearchBar onSearch={handleSearch} />
       {filteredRestaurants.map(restaurant => (
         <Restaurant
@@ -29,23 +30,12 @@ const RestaurantList = () => {
           name={restaurant.name}
           location={restaurant.location}
           rating={restaurant.rating}
-          menu={restaurant.menu}
+          distance={restaurant.distance}
         />
       ))}
     </div>
     
-    <div>
-      <h1>Restaurant List</h1>
-      {restaurants.map(restaurant => (
-        <Restaurant
-          key={restaurant.id}
-          name={restaurant.name}
-          location={restaurant.location}
-          rating={restaurant.rating}
-          menu={restaurant.menu}
-        />
-      ))}
-    </div>
+
   
     
     </>

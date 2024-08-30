@@ -1,16 +1,23 @@
+/* src/App.css */
+
 .App {
   text-align: center;
+  position: relative; /* Make sure the .App container is positioned relative */
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  height: 60px; /* Adjust height to make the logo smaller */
+  position: absolute; /* Position the logo absolutely */
+  top: 10px; /* Adjust top position */
+  left: 10px; /* Adjust left position */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App-title {
+  height: 50px; /* Adjust height to make the logo smaller */
+  position: absolute; /* Position the logo absolutely */
+  top: 20px; /* Adjust top position */
+  left: 80px; /* Adjust left position */
+  color: #1e3441;
 }
 
 .App-header {
@@ -21,11 +28,13 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(8, 7, 7);
+  position: relative; /* Position relative for positioning the logo */
+  padding-top: 60px; /* Provide space for the logo */
 }
 
 .App-link {
-  color: #61dafb;
+  color: #080909;
 }
 
 @keyframes App-logo-spin {
@@ -36,6 +45,7 @@
     transform: rotate(360deg);
   }
 }
+
 .restaurant {
   border: 1px solid #ddd;
   border-radius: 8px;
@@ -47,8 +57,40 @@ h2 {
   margin-top: 0;
 }
 
+h3 {
+  text-align: center;
+}
+
 strong {
   display: inline-block;
   width: 100px;
 }
 
+.layout-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+}
+
+.layout-header {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  color: rgb(11, 9, 9);
+}
+
+.layout-logo {
+  height: 50px; /* Adjust logo size as needed */
+  margin-right: 20px;
+}
+
+.layout-title {
+  font-size: 24px;
+  margin: 0;
+}
+
+.layout-main {
+  flex: 1;
+  padding: 20px;
+}

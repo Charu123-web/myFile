@@ -24,7 +24,7 @@ return (
 <div className="form-box register ">
 
 <form action="">
-    <h1>Registration</h1>
+    <h3>Registration</h3>
     <div className="input-box">
         <input type="text" 
         placeholder='Username' required/>

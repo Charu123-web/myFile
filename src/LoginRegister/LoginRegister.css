@@ -26,14 +26,18 @@
     transition: none;
     translate: -700px;
 }
+
+.wrapper.active .form-box.register{
+    transition: none;
+    translate: -700px;
+}
  
 .wrapper.form-box.register{
-    position: absolute;
-    transition: none;
-    translate: 700px;
+    transition: translate.18s ease;
+    translate: 0;
 
 }
-.wrapper.form-box.login{
+.wrapper.form-box.login {
     transition: translate.18s ease;
     translate: 0;
 }
@@ -56,7 +60,7 @@ form .input-box {
     background:transparent;
     border:none;
     outline:none;
-    border:2px solid rgba(255,255,255,.1);
+    border:1px solid rgba(7, 5, 5, 0.92);
     border-radius: 40px;
     font-size: 16px;
     color:#fff;
@@ -92,7 +96,7 @@ form .remember-forgot {
     text-decoration: underline;
 }
 form button {
-    width: 100px;
+    width: 100%;
     height:45px;
     background: #fff;
     border:none;
@@ -103,7 +107,10 @@ form button {
     font-size: 16px;
     color:#333;
     font-weight: 700;
+    align-items: center;
+    padding: 10px;
 }
+
 form .register-link{
     font-size: 14.5px;
     text-align: center;
@@ -134,4 +141,10 @@ form .login-link{
 .login-link p a {
     text-decoration: underline;
 }
-
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ensure wrapper takes full viewport height */
+    background-color: #f4f4f4; /* Optional: background color for better visibility */
+  }

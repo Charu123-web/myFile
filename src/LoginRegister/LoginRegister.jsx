@@ -7,6 +7,7 @@ import { useState } from 'react';
 import Register from './Register.jsx';
 import {BrowserRouter,Route,Router,Switch,Routes} from "react-router-dom";
 import {useNavigate} from "react-router-dom";
+import { BiAlignMiddle } from 'react-icons/bi';
 
 
 const LoginRegister = () => {
@@ -28,7 +29,7 @@ const LoginRegister = () => {
         <div className="form-box login " >
           
             <form action="">
-                <h1>Login</h1>
+                <h3>Login</h3>
                 <div className="input-box">
                     <input type="text" 
                     placeholder='Username' required/>
@@ -47,7 +48,7 @@ const LoginRegister = () => {
                     <a href="#">Forgot password?</a>
 
                 </div>
-                <button type="submit">Login</button>
+                <button type="submit" onClick={()=> navigate("/restaurants")}>Login</button>
 
                 <div className="register-link">
                     <p>Don't have an account?

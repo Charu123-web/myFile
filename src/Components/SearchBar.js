@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './SearchBar.css'; // Import the CSS file
 
 const SearchBar = ({ onSearch }) => {
   const [query, setQuery] = useState('');
@@ -9,12 +10,15 @@ const SearchBar = ({ onSearch }) => {
   };
 
   return (
-    <input
-      type="text"
-      placeholder="Search restaurants..."
-      value={query}
-      onChange={handleChange}
-    />
+    <div className="search-bar-container">
+      <input
+        type="text"
+        className="search-bar"
+        placeholder="Search restaurants..."
+        value={query}
+        onChange={handleChange}
+      />
+    </div>
   );
 };
 

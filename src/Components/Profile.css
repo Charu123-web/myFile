@@ -1,0 +1,57 @@
+/* src/Components/Profile.css */
+
+.profile-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  .profile-info {
+    margin-bottom: 20px;
+  }
+  
+  .profile-info p {
+    margin: 8px 0;
+    font-size: 16px;
+  }
+  
+  .profile-info strong {
+    display: inline-block;
+    width: 150px; /* Adjust width to align labels */
+  }
+  
+  .logout-button {
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+    background-color: #52896a;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .logout-button:hover {
+    background-color: #9ab5a6; /* Darker shade on hover */
+  }
+
+  .profile-buttons {
+    display: flex;
+    gap: 10px; /* Space between buttons */
+    justify-content: center; /* Center buttons horizontally */
+  }
+  
+  .logout-button, .orders-button {
+    padding: 10px 15px;
+    font-size: 16px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  

@@ -1,0 +1,57 @@
+/* src/Components/CartDetails.css */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f4f4f4;
+}
+
+h4 {
+  margin-top: 20px;
+}
+
+.cart-buttons {
+  display: flex;
+  justify-content: flex-end; /* Align buttons to the right */
+  margin-top: 20px;
+}
+
+.back-button, .place-order-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-left: 10px; /* Space between buttons */
+}
+
+.back-button {
+  background-color: #6c757d; /* Gray background for back button */
+}
+
+.back-button:hover {
+  background-color: #5a6268; /* Darker gray on hover */
+}
+
+.place-order-button {
+  background-color: #28a745; /* Green background for place order button */
+}
+
+.place-order-button:hover {
+  background-color: #218838; /* Darker green on hover */
+}

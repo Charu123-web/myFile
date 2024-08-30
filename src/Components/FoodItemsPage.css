@@ -1,0 +1,75 @@
+/* src/FoodItemsPage.css */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  
+  table th,
+  table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  table th {
+    background-color: #f4f4f4;
+  }
+  
+  button {
+    padding: 5px 10px;
+    margin: 0 5px;
+    border: none;
+    color: white;
+    background-color: #007bff;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  button.remove {
+    background-color: #dc3545;
+  }
+  
+  button.remove:hover {
+    background-color: #c82333;
+  }
+  
+  .table-container {
+    overflow-x: auto;
+  }
+  
+  /* src/Components/FoodItemsPage.css */
+
+.checkout-button {
+  display: block;
+  margin-top: 20px; /* Space above the button */
+  margin-left: auto; /* Align button to the right */
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #28a745; /* Green background color */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.checkout-button:hover {
+  background-color: #218838; /* Darker green on hover */
+}
