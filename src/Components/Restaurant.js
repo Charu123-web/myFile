@@ -7,7 +7,7 @@ const Restaurant = ({ id, name, location, rating, distance }) => {
   return (
     <div className="restaurant">
       <div className="restaurant-header">
-        <Link to={`/restaurants/${id}`}>
+        <Link to={`/restaurants/1`}>
           <h2>{name}</h2>
         </Link>
         <p className="restaurant-location">{location}</p>

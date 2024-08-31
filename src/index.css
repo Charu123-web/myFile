@@ -15,5 +15,17 @@ body {
   align-items: center;
   min-height: 100vh;
   background: rgb(129, 190, 162);
+  background-image: url('./images/bg1.jpg'); /* Path to your background image */
+  background-size: cover; /* Ensure the image covers the entire viewport */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent repeating the image */
 
 }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+

@@ -1,26 +1,7 @@
-import logo from './logo.svg';
-import './App.css';
-import LoginRegister from './LoginRegister/LoginRegister';
-import Register from './LoginRegister/Register';
-import { BrowserRouter as Router, Switch, Route, Link,Routes } from 'react-router-dom';
-import RestaurantList from './Components/RestaurantList';
-
-// function Layout() {
-//   return (
-    
-//     <div className='app-container' >
-//         <header className="app-header">
-//           <img src={logo} className="App-logo" alt="logo" />
-//           <h2 className="App-title">Food Ordering Portal</h2>
-//         </header>
-//       <>
-      
-    
-//       </>
-//     </div>
-    
-//   );
-// }
+import React from 'react';
+import { Link } from 'react-router-dom';
+import logo from './images/logo.svg'; // Adjust path if necessary
+import './App.css'; // Make sure to include the CSS file
 
 const Layout = ({ children }) => {
   return (
@@ -29,7 +10,7 @@ const Layout = ({ children }) => {
         <Link to="/">
           <img src={logo} className="layout-logo" alt="logo" />
         </Link>
-        <h1 className="layout-title">Food Ordering Portal</h1>
+        <h1 className="layout-title">EazyBite</h1>
       </header>
       <main className="layout-main">
         {children}
